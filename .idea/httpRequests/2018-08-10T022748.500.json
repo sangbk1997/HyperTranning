@@ -1,0 +1,7 @@
+{
+  "timestamp": "2018-08-10T07:27:47.977+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "query did not return a unique result: 19; nested exception is org.hibernate.NonUniqueResultException: query did not return a unique result: 19",
+  "path": "/ajax/employee/"
+}

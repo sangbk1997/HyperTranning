@@ -1,0 +1,52 @@
+package com.hyperlogy.test.web;
+
+import com.hyperlogy.test.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
+
+@Controller
+@RequestMapping("/user")
+public class mainController {
+
+    @Autowired
+    private UserService userService;
+
+
+
+    @GetMapping("/")
+    public String userHome(){
+        return "userList";
+    }
+
+
+    @GetMapping("/RoleForUser/{id}")
+    public String roleForUser(){
+        return "roleForUser";
+    }
+
+    @GetMapping("/myLogin")
+    public String accessLogin(Model model){
+        model.addAttribute("title", "Login Page");
+        return "/user/loginForm";
+    }
+
+    @GetMapping("/invalidLogin")
+    public String errorLogin(Model model){
+        model.addAttribute("title", "Error LoginPage");
+        model.addAttribute("errorLogin", "Login error, please try again !");
+        return "/user/loginForm";
+    }
+
+    @GetMapping("/myLogout")
+    public String accessLoginError(Model model){
+        model.addAttribute("title", "Logout Page");
+        model.addAttribute("logoutMessage", "You have already logout successfully !");
+        return "/user/loginForm";
+    }
+
+}

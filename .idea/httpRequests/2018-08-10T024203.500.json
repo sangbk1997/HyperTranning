@@ -1,0 +1,7 @@
+{
+  "timestamp": 1533886923762,
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "No message available",
+  "path": "/ajax/employee/"
+}

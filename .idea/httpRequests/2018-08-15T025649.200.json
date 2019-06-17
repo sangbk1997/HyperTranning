@@ -1,0 +1,23 @@
+{
+  "status": "SUCCESS",
+  "data": {
+    "employees": [
+      {
+        "id": 14,
+        "code": "nv01",
+        "firstName": "Trịnh Văn",
+        "lastName": "Thắng",
+        "email": "thang@gmail.com",
+        "dateOfBirth": 1533340800000
+      },
+      {
+        "id": 15,
+        "code": "nv02",
+        "firstName": "Hồ Hữu",
+        "lastName": "Trọng",
+        "email": "trong@gmail.com",
+        "dateOfBirth": 1535500800000
+      }
+    ]
+  }
+}

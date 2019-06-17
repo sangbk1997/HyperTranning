@@ -1,0 +1,175 @@
+body {
+  font-family: Arial;
+  a {
+    cursor: pointer;
+    color: rgb(0, 0, 238);
+  }
+}
+
+.user-container {
+  padding: 20px;
+  .__list-user-table, .__table-inner, .__table-inner-list-user, .__table-user {
+    width: 100%;
+  }
+  .error {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+  }
+
+  .user-search {
+    border: 1px solid @border-color;
+    .__content {
+      padding: 5px;
+      width: 500px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .__table-inner {
+      tr > td {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    }
+
+  }
+  .list-user {
+    border: 1px solid @border-color;
+    .__content {
+      padding: 20px 10px 10px;
+    }
+    .__list-user-table {
+      td {
+        border: 1px solid @border-color;
+        border-top: none;
+        padding: 5px;
+        text-align: center;
+        &.__manv, &.__tenv {
+          text-align: left;
+        }
+        &:not(:first-child) {
+          border-left: none;
+        }
+      }
+      thead td {
+        background-color: #ccc;
+        border-top: 1px solid @border-color;
+      }
+      .__separator {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+
+    }
+  }
+
+  .user-search, .list-user {
+    .__title {
+      border-bottom: 1px solid @border-color;
+      padding: 5px 10px;
+    }
+  }
+
+  .user-input {
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid @border-color;
+    line-height: 28px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+    &:focus {
+      outline: none;
+      outline-offset: 0;
+      border-color: @primary-color;
+    }
+  }
+  .user-popup {
+    .__overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      transition: opacity 500ms;
+    }
+    .__content {
+      width: 600px;
+      background-color: @light-color;
+      z-index: 100;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 1px solid @border-color;
+      border-radius: 4px;
+      .__header, .__main, .__footer {
+        padding: 20px;
+        padding-left: 12px;
+      }
+      .__footer {
+        text-align: center;
+        border-top: 1px solid @border-color;
+      }
+      .__header {
+        border: 1px solid @border-color;
+        .btn-close {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          color: black;
+        }
+      }
+      .__table-user {
+        border: none;
+        > tbody > tr > td {
+          padding-bottom: 20px;
+        }
+      }
+    }
+    .__table-inner-list-user {
+      border: none;
+      td {
+        &:first-child {
+          padding-right: 10px;
+        }
+        &:last-child {
+          padding-left: 10px;
+        }
+      }
+    }
+    .inline-group {
+      hd-input {
+        width: 47%;
+        display: inline-block;
+        &:last-child {
+          float: right;
+        }
+      }
+    }
+    .input.input-calendar {
+      width: 67% !important;
+    }
+    .ui-datepicker-trigger {
+      right: 5px;
+      position: absolute;
+      top: 4px;
+    }
+    input[type=text].custom-date-picker {
+      background-color: @light-color;
+    }
+  }
+  input.custom-date-picker {
+    width: 67%;
+    height: 32px;
+    padding-left: 10px;
+    &[readonly] {
+      background: @light-color;
+    }
+    &:focus, &:active {
+      border: 1px solid #0072bc;
+    }
+  }
+}

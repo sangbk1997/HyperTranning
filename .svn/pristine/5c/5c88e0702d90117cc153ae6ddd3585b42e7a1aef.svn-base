@@ -1,0 +1,5 @@
+<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<h1><spring:message code="welcome.message"/></h1>
+<h2>Message: <spring:message code="welcome.message"/></h2>

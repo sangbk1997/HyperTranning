@@ -1,0 +1,127 @@
+//package com.hyperlogy.test.controller;
+//
+//import com.hyperlogy.test.bo.Role;
+//import com.hyperlogy.test.bo.User;
+//import com.hyperlogy.test.bo.UserRole;
+//import com.hyperlogy.test.bo.Validate;
+//import com.hyperlogy.test.service.RoleService;
+//import com.hyperlogy.test.service.UserRoleService;
+//import com.hyperlogy.test.service.UserService;
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.controller.bind.annotation.*;
+//
+//
+//import java.util.ArrayList;
+//import java.util.List;
+//
+//@RestController
+//@RequestMapping("/user")
+//public class mainRestController {
+//
+//    @Autowired
+//    private UserService userService;
+//
+//    @Autowired
+//    private RoleService roleService;
+//
+//    @Autowired
+//    private UserRoleService userRoleService;
+//
+//    @GetMapping("/listAllUser")
+//    public List<User> listAllUser(){
+//        List<User> users = userService.list(new User());
+//
+////        return userService.list(new User());
+//        return users;
+//    }
+//
+//    @PostMapping("/likeListUser")
+//    public List<User> likeListUser(@RequestBody User user){
+//        List<User> users = userService.listLike(user);
+//        return users;
+//
+//    }
+//    @PostMapping("/saveUser")
+//    public Validate saveUser(@RequestBody User user){
+//        Validate validate = new Validate();
+//        try {
+//            userService.doInsert(user);
+//            validate.setContent("200");
+//        } catch (Exception e) {
+//            validate.setContent(e.toString());
+//        }
+//        return validate;
+//
+//    }
+//
+//    @PostMapping("/updateUser")
+//    public void Update(@RequestBody User user)  {
+//            userService.doUpdate(user);
+//    }
+//
+//    @DeleteMapping("/delete/{id}")
+//    public void delete(@PathVariable long id){
+//
+//        User user = new User();
+//        user.setId(id);
+//        userService.doDelete(user);
+//
+//        List<UserRole> userRoles = userRoleService.equalListById(new UserRole(), "userid", id);
+//        userRoleService.deleteManyObject(userRoles);
+//    }
+//
+//    @GetMapping("/findByIdUser/{id}")
+//    public User findByIdUser(@PathVariable Long id){
+//            return userService.findById(new User(), id);
+//    }
+//
+//    @GetMapping("/listAllRole")
+//    public List<Role> listAllRole(){
+//        return roleService.list(new Role());
+//    }
+//
+//    @PostMapping("/saveUserRole")
+//    public void saveUserRole(@RequestBody List<UserRole> userRoles){
+//        userRoleService.doInsertMany(userRoles);
+//    }
+//
+//    @GetMapping("/listAllUserRole")
+//    public List<UserRole> listAllUserRole(){
+//        return userRoleService.list(new UserRole());
+//    }
+//
+//
+//    @GetMapping("/findEqual")
+//    public User findEqual(){
+//        return userService.equal(new User(), "code", "123@1234");
+//    }
+//
+//    @GetMapping("/findRoleByIdUser/{id}")
+//    public List<UserRole> findRoleByIdUser(@PathVariable Long id){
+//
+//        List<UserRole> list = userRoleService.equalListById(new UserRole(), "userid", id);
+//        return list;
+//    }
+//
+//    @GetMapping("/deleteAllUserRole")
+//    public void deleteAllUserRole(){
+//        List<UserRole> userRoles = new ArrayList<UserRole>();
+//        for(int i = 27; i<=36;i++){
+//            UserRole userRole = new UserRole();
+//            userRole.setId((long)i);
+//            userRoles.add(userRole);
+//        }
+//        userRoleService.deleteManyObject(userRoles);
+//
+//    }
+//
+//    @GetMapping("/getAllUserRole")
+//    public List<UserRole> getAllUserRole(){
+//        return userRoleService.list(new UserRole());
+//    }
+//
+//    @GetMapping("/getUserRole/{roleId}")
+//    public List<UserRole> getUserRole(@PathVariable Long roleId){
+//        return userRoleService.search("roleid", roleId);
+//    }
+//}

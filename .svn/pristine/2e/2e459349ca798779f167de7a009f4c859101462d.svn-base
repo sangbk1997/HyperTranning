@@ -1,0 +1,34 @@
+<!--<div id="id01" class="modal" ng-controller="roleController">-->
+    <!--&lt;!&ndash; Modal Content &ndash;&gt;-->
+    <!--<div class="modal-content animate">-->
+        <!--<div class="title">-->
+            <!--<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">X</span>-->
+            <!--<h3 class="center">Thiết Lập Quyền </h3>-->
+        <!--</div>-->
+        <!--<hr>-->
+        <!--<div class="infoDetail">-->
+            <!--<table>-->
+                <!--<tr>-->
+                    <!--<td class="width-3">-->
+                        <!--<label>Mã quyền </label>-->
+                    <!--</td>-->
+                    <!--<td class="width-5">-->
+                        <!--<input type="text" placeholder="Nhập mã quyền " ng-model="roleForm.code" id="codeRole">-->
+                    <!--</td>-->
+                <!--</tr>-->
+                <!--<tr>-->
+                    <!--<td class="width-3">-->
+                        <!--<label>Tên quyền </label>-->
+                    <!--</td>-->
+                    <!--<td class="width-5">-->
+                        <!--<input type="text" placeholder="Nhập tên quyền " ng-model="roleForm.rolename">-->
+                    <!--</td>-->
+                <!--</tr>-->
+            <!--</table>-->
+        <!--</div>-->
+        <!--<div class="center">-->
+            <!--<button class="btn btn-primary" ng-click="updateOrInsert('id01')">Cập Nhật </button>-->
+            <!--<button class="btn btn-default" ng-click="hideDialog('id01')">Thoát </button>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->

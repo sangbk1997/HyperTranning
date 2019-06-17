@@ -1,0 +1,7 @@
+<div class="hd-datepicker {{styleClass}}" ng-class="{'show-div': showDiv}">
+    <div class="input input-calendar" ng-class="{'disabled':disabled}">
+        <input type="text" class="hdd-picker hd-value-input" ng-class="{'not-close' : showTime}"
+               ng-model="value_locale" ng-change="changeDate()"
+               ng-disabled="disabled" hydname="{{hydname}}" commandvalue="{{commandvalue}}" ng-keypress="onkeyPress($event)"/>
+    </div>
+</div>

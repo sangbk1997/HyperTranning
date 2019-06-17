@@ -1,0 +1,65 @@
+<%--Javascrip--%>
+<%--Libs--%>
+<script src="/static/js/libs/jquery-1.9.1.js"></script>
+<script src="/static/js/libs/jquery-migrate-1.2.1.js"></script>
+<script src="/static/js/libs/jquery.mobile.custom.js"></script>
+<script src="/static/js/libs/jquery-ui-1.10.4.js"></script>
+<script src="/static/js/libs/jquery.cookie.js"></script>
+<script src="/static/js/libs/modernizr.js"></script>
+<script src="/static/js/libs/angular-1.7.2.js"></script>
+<script src="/static/js/libs/angular-resource-1.7.2.js"></script>
+<script src="/static/js/libs/angular-route-1.7.2.js"></script>
+
+<%--Plugins--%>
+<script src="/static/js/plugins/date.js"></script>
+<script src="/static/js/plugins/jquery.tooltipster.modified.js"></script>
+<script src="/static/js/plugins/jquery.hammer-full.js"></script>
+<script src="/static/js/plugins/jquery.ui.touch-punch.js"></script>
+<script src="/static/js/plugins/jquery.fileDownload.js"></script>
+<script src="/static/js/plugins/gen_validatorv31.modified.js"></script>
+<script src="/static/js/plugins/snap.js"></script>
+<script src="/static/js/plugins/jquery.media.js"></script>
+<script src="/static/js/plugins/jquery.form.js"></script>
+<script src="/static/js/plugins/ios-orientationchange-fix.js"></script>
+<script src="/static/js/plugins/html5shiv-printshiv.js"></script>
+<script src="/static/js/plugins/canvg/rgbcolor.js"></script>
+<script src="/static/js/plugins/canvg/StackBlur.js"></script>
+<script src="/static/js/plugins/canvg/canvg.js"></script>
+<script src="/static/js/plugins/fastclick.js"></script>
+<script src="/static/js/plugins/jquery-growheight-textarea.js"></script>
+
+<%--Utils--%>
+<script src="/static/js/hyd/utils/hyd-bean-utils.js"></script>
+<script src="/static/js/hyd/utils/hyd-common-utils.js"></script>
+
+<%--hyd base--%>
+<script src="/static/js/hyd/base/hyd-global.js"></script>
+<script src="/static/js/hyd/base/hyd-jquery-ajax-setup.js"></script>
+<script src="/static/js/hyd/base/hyd-prototype.js"></script>
+<script src="/static/js/hyd/base/hyd-languages.js"></script>
+<script src="/static/js/hyd/base/hyd-messages.js"></script>
+<script src="/static/js/hyd/base/hyd-template.js"></script>
+<script src="/static/js/hyd/base/hyd-template.js"></script>
+
+<%--hyd utils--%>
+<script src="/static/js/hyd/utils/hyd-common-utils.js"></script>
+<script src="/static/js/hyd/utils/hyd-device-utils.js"></script>
+<script src="/static/js/hyd/utils/hyd-form-utils.js"></script>
+<script src="/static/js/hyd/utils/hyd-string-utils.js"></script>
+<%--ihcm base--%>
+<script src="/static/js/ihcm/base/ihcm-languages.js"></script>
+<script src="/static/js/ihcm/base/ihcm-utils.js"></script>
+
+
+<script src="/static/app/app-module.js"></script>
+<script src="/static/app/app-routes.js"></script>
+<script src="/static/app/user/user-service.js"></script>
+<script src="/static/app/user/user-controller.js"></script>
+<script src="/static/app/user/user-insert-controller.js"></script>
+<script src="/static/app/user/user-update-controller.js"></script>
+
+<%--Role JS --%>
+<script src="/static/app/role/role-service.js"></script>
+<script src="/static/app/role/role-controller.js"></script>
+<script src="/static/app/role/role-insert-controller.js"></script>
+<script src="/static/app/role/role-update-controller.js"></script>

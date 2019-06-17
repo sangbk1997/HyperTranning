@@ -1,0 +1,7 @@
+{
+  "timestamp": 1533890632826,
+  "status": 400,
+  "error": "Bad Request",
+  "message": "JSON parse error: Cannot deserialize value of type `java.lang.Long` from String \"2018-08-10\": not a valid Long value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Long` from String \"2018-08-10\": not a valid Long value\n at [Source: (PushbackInputStream); line: 6, column: 18] (through reference chain: com.hyperlogy.employee.bo.Employee[\"dateOfBirth\"])",
+  "path": "/ajax/employee"
+}

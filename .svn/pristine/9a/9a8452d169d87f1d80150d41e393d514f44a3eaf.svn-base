@@ -1,0 +1,9 @@
+<div class="select" ng-class="{'disabled': disabled}">
+    <i class="icon-prepend fa {@icon-prepend}"></i>
+    <select ng-model="value"
+            ng-options="option[fieldValue] as option[fieldTitle] for option in dSource"
+            ng-change="linkOnSave()"
+            ng-disabled="disabled" hydname="{{hydname}}">
+        <option value ng-if="hasEmptyValue">{{::emptyPlaceholder}}</option>
+    </select>
+</div>

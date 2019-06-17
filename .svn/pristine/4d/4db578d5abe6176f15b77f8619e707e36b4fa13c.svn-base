@@ -1,0 +1,1 @@
+.is-null{color:#757575}.is-null.is-null{font-weight:normal}.is-status{padding:2px 10px;color:#fff}.is-ontrack{background-color:#27ae60}.is-warning{background-color:#f2c108}.is-over{background-color:#e11b22}.is-default{background-color:#6498d8}.is-not-done{opacity:.4;filter:alpha(opacity=40)}

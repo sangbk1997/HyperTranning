@@ -1,0 +1,4 @@
+<label class="checkbox">
+    <input type="checkbox" ng-model="value" ng-change="linkOnChange()" ng-class="{'disabled' : disabled}" ng-disabled="disabled" {@true-value} {@false-value}>
+    <i></i><span ng-bind-html="label | printMsg"></span>
+</label>

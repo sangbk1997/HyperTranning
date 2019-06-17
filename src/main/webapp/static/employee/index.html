@@ -1,0 +1,392 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{static/css/base/hyd-color.css}">
+    <link rel="stylesheet" th:href="@{static/css/base/hyd-common.css}">
+    <link rel="stylesheet" th:href="@{static/css/base/hyd-typography.css}">
+
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-animations.css}">
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-box-form.css}">
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-box-ibox.css}">
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-boxs.css}">
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-buttons.css}">
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-calendar.css}">
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-custom-scroll.css}">
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-data-icons-generate.css}">
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-dialog.css}">
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-dropdown.css}">
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-editable.css}">
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-forms.css}">
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-forms-new.css}">
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-icons.css}">
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-list.css}">
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-loading.css}">
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-messages.css}">
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-paging.css}">
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-progress.css}">
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-rating.css}">
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-states.css}">
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-steps.css}">
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-tab.css}">
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-tables.css}">
+    <link rel="stylesheet" th:href="@{static/css/components/cpn-widgets.css}">
+
+    <link rel="stylesheet" th:href="@{static/css/libs/font-awesome.css}">
+    <link rel="stylesheet" th:href="@{static/css/libs/jquery-ui-1.10.4.css}">
+    <link rel="stylesheet" th:href="@{static/css/libs/normalize.modified.css}">
+    <link rel="stylesheet" th:href="@{static/css/libs/pretty-popin.modified.css}">
+
+    <link rel="stylesheet" th:href="@{static/css/employee/helper_class.css}">
+    <link rel="stylesheet" th:href="@{static/css/employee/main.css}">
+
+    <link rel="stylesheet" href="https://npmcdn.com/angular-toastr/dist/angular-toastr.css"/>
+
+    <script th:src="@{static/js/libs/angular-1.7.2.js}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.js"></script>
+    <script src="https://npmcdn.com/angular-toastr/dist/angular-toastr.tpls.js"></script>
+    <script th:src="@{static/js/libs/angular-resource-1.7.2.js}"></script>
+    <script th:src="@{static/js/libs/angular-route-1.7.2.js}"></script>
+    <script th:src="@{static/js/libs/jquery-1.9.1.js}"></script>
+    <script th:src="@{static/js/libs/jquery-migrate-1.2.1.js}"></script>
+    <script th:src="@{static/js/libs/jquery-ui-1.10.4.js}"></script>
+    <script th:src="@{static/js/hyd/base/hyd-global.js}"></script>
+    <script th:src="@{static/js/libs/jquery-ui-timepicker-addon.js}"></script>
+    <script th:src="@{static/js/libs/modernizr.js}"></script>
+    <script th:src="@{static/js/libs/jquery.cookie.js}"></script>
+    <script th:src="@{static/js/libs/jquery.mobile.custom.js}"></script>
+
+
+    <script th:src="@{static/js/plugins/canvg/canvg.js}"></script>
+    <script th:src="@{static/js/plugins/canvg/rgbcolor.js}"></script>
+    <script th:src="@{static/js/plugins/canvg/StackBlur.js}"></script>
+
+    <script th:src="@{static/js/plugins/date.js}"></script>
+    <script th:src="@{static/js/plugins/fastclick.js}"></script>
+    <script th:src="@{static/js/plugins/gen_validatorv31.modified.js}"></script>
+    <script th:src="@{static/js/plugins/html5shiv-printshiv.js}"></script>
+    <script th:src="@{static/js/plugins/ios-orientationchange-fix.js}"></script>
+    <script th:src="@{static/js/plugins/jquery.fileDownload.js}"></script>
+    <script th:src="@{static/js/plugins/jquery.form.js}"></script>
+    <script th:src="@{static/js/plugins/jquery.hammer-full.js}"></script>
+    <script th:src="@{static/js/plugins/jquery.media.js}"></script>
+    <script th:src="@{static/js/plugins/jquery.tooltipster.modified.js}"></script>
+    <script th:src="@{static/js/plugins/jquery.ui.touch-punch.js}"></script>
+    <script th:src="@{static/js/plugins/jquery-growheight-textarea.js}"></script>
+    <script th:src="@{static/js/plugins/snap.js}"></script>
+
+    <script th:src="@{static/js/hyd/base/hyd-filter.js}"></script>
+    <script th:src="@{static/js/hyd/base/hyd-jquery-ajax-setup.js}"></script>
+    <script th:src="@{static/js/hyd/base/hyd-languages.js}"></script>
+    <script th:src="@{static/js/hyd/base/hyd-messages.js}"></script>
+    <script th:src="@{static/js/hyd/base/hyd-prototype.js}"></script>
+    <script th:src="@{static/js/hyd/base/hyd-template.js}"></script>
+    <script th:src="@{static/js/hyd/base/hyd-validate-directive.js}"></script>
+    <script th:src="@{static/js/hyd/base/hyd-validation.js}"></script>
+    <script th:src="@{static/js/hyd/base/hyd-view.js}"></script>
+
+    <script th:src="@{static/js/hyd/configs/hyd-validation-configs.js}"></script>
+
+    <script th:src="@{static/js/hyd/utils/hyd-autocomplete-utils.js}"></script>
+    <script th:src="@{static/js/hyd/utils/hyd-bean-utils.js}"></script>
+    <script th:src="@{static/js/hyd/utils/hyd-common-utils.js}"></script>
+    <script th:src="@{static/js/hyd/utils/hyd-date-utils.js}"></script>
+    <script th:src="@{static/js/hyd/utils/hyd-device-utils.js}"></script>
+    <script th:src="@{static/js/hyd/utils/hyd-form-utils.js}"></script>
+    <script th:src="@{static/js/hyd/utils/hyd-hierachy-utils.js}"></script>
+    <script th:src="@{static/js/hyd/utils/hyd-math-utils.js}"></script>
+    <script th:src="@{static/js/hyd/utils/hyd-script-role-utils.js}"></script>
+    <script th:src="@{static/js/hyd/utils/hyd-string-utils.js}"></script>
+    <script th:src="@{static/js/hyd/utils/hyd-table-utils.js}"></script>
+
+
+    <script th:src="@{static/employee/base/employee-module.js}"></script>
+    <script th:src="@{static/employee/service/employee-service.js}"></script>
+    <script th:src="@{static/employee/controller/employee-controller.js}"></script>
+    <script th:src="@{static/employee/controller/user-controller.js}"></script>
+    <script th:src="@{static/employee/directive/directive.js}"></script>
+
+
+    <script th:src="@{static/js/ihcm/base/ihcm-languages.js}"></script>
+    <script th:src="@{static/js/ihcm/base/ihcm-utils.js}"></script>
+    <script th:src="@{static/js/ihcm/base/ihcm-components.js}"></script>
+
+    <script th:src="@{static/js/hyd/widgets/hd-checkbox/wd-hd-checkbox.js}"></script>
+    <script th:src="@{static/js/hyd/widgets/hd-checkbox-one/wd-hd-checkbox-one.js}"></script>
+    <script th:src="@{static/js/hyd/widgets/hd-datepicker/wd-hd-datepicker.js}"></script>
+    <script th:src="@{static/js/hyd/widgets/hd-input/wd-hd-input.js}"></script>
+    <script th:src="@{static/js/hyd/widgets/hd-radio/wd-hd-radio.js}"></script>
+    <script th:src="@{static/js/hyd/widgets/hd-select/wd-hd-select.js}"></script>
+    <script th:src="@{static/js/hyd/widgets/hd-textarea/wd-hd-textarea.js}"></script>
+    <script th:src="@{static/js/hyd/widgets/wd-classes.js}"></script>
+    <script th:src="@{static/js/hyd/widgets/wd-template-generate.js}"></script>
+
+</head>
+<body>
+<!--<div ng-controller="EmployeeController" class="user-container">-->
+<!--&lt;!&ndash;<p th:text="${contextPath}"></p>&ndash;&gt;-->
+<!--&lt;!&ndash;[[${contextPath}]]&ndash;&gt;-->
+<!--<a class="btn mb-20-i" ng-click="showPopUpAddUser()">Thêm mới</a>-->
+<!--<div class="box">-->
+<!--<div class="box-header">-->
+<!--<p> Thông tin tìm kiếm</p>-->
+<!--</div>-->
+<!--<div class="box-content">-->
+<!--<div class="tform">-->
+<!--<div class="trow">-->
+<!--<label>-->
+<!--Mã nhân viên-->
+<!--</label>-->
+<!--<div class="input">-->
+<!--<hd-input value="codeSearch" required="true" hyname="codeSearch"></hd-input>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="trow">-->
+
+<!--<label>-->
+<!--Họ và tên-->
+<!--</label>-->
+<!--<div class="input">-->
+<!--<hd-input value="fullNameSearch" required="true" hyname="fullNameSearch"></hd-input>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="buttons">-->
+<!--<a class="btn" ng-click="searchUser()">Tìm kiếm</a>-->
+<!--<a class="btn" ng-click="clearSearch()">Xóa trắng</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="box">-->
+<!--<div class="box-header">-->
+<!--<p>Danh sách nhân viên</p>-->
+<!--</div>-->
+<!--<div class="box-content">-->
+<!--<table class="table table-striped table-bordered table-default table-hover table-sorter table-toggle"-->
+<!--cellspacing="0"-->
+<!--cellpadding="0">-->
+<!--<thead>-->
+<!--<tr>-->
+<!--<th class="center">STT</th>-->
+<!--<th class="__manv">Mã nhân viên</th>-->
+<!--<th class="center">Họ và đệm</th>-->
+<!--<th class="__tenv">Tên nhân viên</th>-->
+<!--<th class="center">Thư điện tử</th>-->
+<!--<th class="center">Chức năng</th>-->
+<!--</tr>-->
+<!--</thead>-->
+<!--<tr ng-repeat="user in users" ng-if="users.length > 0">-->
+<!--<td class="center">{{$index + 1}}</td>-->
+<!--<td>{{user.code}}</td>-->
+<!--<td class="center">{{user.firstName}}</td>-->
+<!--<td>{{user.lastName}}</td>-->
+<!--<td class="center">{{user.email}}</td>-->
+<!--<td class="center">-->
+<!--<a ng-click="showPopUpUpdateUser(user)">Cập nhật</a>-->
+<!--<span class="__separator">|</span>-->
+<!--<a ng-click="doDeleteUser(user)">Xóa</a>-->
+<!--</td>-->
+<!--</tr>-->
+<!--<tr>-->
+<!--<td colspan="6" class="center" ng-if="!users.length">-->
+<!--No result-->
+<!--</td>-->
+<!--</tr>-->
+<!--</table>-->
+<!--<div class="row">-->
+<!--<div class="col-md-2">-->
+<!--<div class="pagination">-->
+<!--<a href="" ng-click="doPrePage()"><</a>-->
+<!--<a class="btn btn-default" ng-disabled="page === currentPage" ng-click="doChangePage(page)"-->
+<!--ng-repeat="page in pageArray">{{page}}</a>-->
+<!--<a href="" ng-click="doNextPage()">></a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="col-md-2">-->
+<!--<select ng-options="option.val as option.text for option in options"-->
+<!--ng-model="pageSize" ng-change="changeSelect()">-->
+<!--</select>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="user-popup" ng-if="isShowPopUp">-->
+<!--<div class="__overlay"></div>-->
+<!--<div class="__content">-->
+<!--<div class="__header">-->
+<!--<div class="__content-block-left">-->
+<!--<div ng-if="typeActionPopUp=='add'" class="fz-16 font-weight-bold">Thêm mới nhân viên</div>-->
+<!--<div ng-if="typeActionPopUp=='update'" class="fz-16 font-weight-bold">Cập nhật nhân viên</div>-->
+<!--</div>-->
+<!--<div class="__content-block-right">-->
+<!--<a class="btn-close" ng-click="closePopup()"><i class="fa fa-close btn-close"></i></a>-->
+<!--</div>-->
+<!--</div>-->
+<!--<form hyd-submit="doUpSert()" hyd-validation="employeeConfigsValidate" hyd-model="userInsert"-->
+<!--name="simpleEmployee">-->
+<!--<div class="box">-->
+<!--<div class="box-content">-->
+
+<!--<div class="tform">-->
+<!--<div class="trow">-->
+<!--<label class="title">-->
+<!--Ảnh-->
+<!--</label>-->
+<!--<input type="file" file-model="userInsert.fileRoot"/>-->
+<!--</div>-->
+<!--<div class="trow">-->
+<!--<label class="title">-->
+<!--Mã nhân viên <span class="red-color">*</span>-->
+<!--</label>-->
+<!--<hd-input empty-placeholder="Mã nhân viên" value="userInsert.code" required="true"-->
+<!--hydname="code"></hd-input>-->
+<!--</div>-->
+<!--<div class="trow">-->
+<!--<label class="title">-->
+<!--Tên đầy đủ <span class="red-color">*</span>-->
+<!--</label>-->
+<!--<div class="inline-group">-->
+<!--<hd-input empty-placeholder="Họ và đệm" value="userInsert.firstName" required="true"-->
+<!--hydname="firstName"></hd-input>-->
+<!--<hd-input empty-placeholder="Tên" value="userInsert.lastName" required="true"-->
+<!--hydname="lastName"></hd-input>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="trow">-->
+<!--<label class="title">-->
+<!--Thư điện tử-->
+<!--</label>-->
+<!--<hd-input empty-placeholder="Thư điện tử" value="userInsert.email"-->
+<!--hyname="email"></hd-input>-->
+<!--</div>-->
+<!--<div class="trow">-->
+<!--<label class="title">-->
+<!--Ngày sinh-->
+<!--</label>-->
+<!--<input class="custom-date-picker"-->
+<!--readonly-->
+<!--type=text date-picker-->
+<!--dateformat="yy-mm-dd"-->
+<!--ng-model='userInsert.dateOfBirth'>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--</div>-->
+<!--<pre>-->
+<!--{{userInsert|json}}-->
+<!--</pre>-->
+
+<!--<div class="__footer">-->
+<!--<input ng-if="typeActionPopUp=='add'" type="submit" value="Thêm mới" class="btn">-->
+<!--<input ng-if="typeActionPopUp=='update'" type="submit" value="Cập nhật" class="btn">-->
+<!--<button class="btn btn-secondary" ng-click="closePopup()">Đóng</button>-->
+<!--</div>-->
+<!--</form>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<div ng-controller="UserController" class="user-container">
+    <a class="btn mb-20-i" ng-click="showPopUpAddUser()">Thêm mới</a>
+    <div class="box">
+        <div class="box-header">
+            <p>Danh sách nhân viên</p>
+        </div>
+        <div class="box-content">
+            <table class="table table-striped table-bordered table-default table-hover table-sorter table-toggle"
+                   cellspacing="0"
+                   cellpadding="0">
+                <thead>
+                <tr>
+                    <th class="center">STT</th>
+                    <th class="__manv">Họ và tên</th>
+                    <th class="center">Tài khoản</th>
+                    <th class="__tenv">Giới tính</th>
+                    <th class="center">Công khai/Riêng tư</th>
+                </tr>
+                </thead>
+                <tr ng-repeat="user in users" ng-if="users.length > 0">
+                    <td class="center">{{$index + 1}}</td>
+                    <td>{{user.fullName}}</td>
+                    <td class="center">{{user.userName}}</td>
+                    <td>{{user.gender}}</td>
+                    <td class="center">{{user.isPublic}}</td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="center" ng-if="!users.length">
+                        No result
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="user-popup" ng-if="isShowDialog">
+        <div class="__overlay"></div>
+        <div class="__content">
+            <div class="__header">
+                <div class="__content-block-left">
+                    <div class="fz-16 font-weight-bold">Thêm mới nhân viên</div>
+                </div>
+                <div class="__content-block-right">
+                    <a class="btn-close" ng-click="closePopup()"><i class="fa fa-close btn-close"></i></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-content">
+                    <div class="tform">
+                        <div class="trow">
+                            <label class="title">
+                                Họ & tên: <span class="red-color">*</span>
+                            </label>
+                            <hd-input empty-placeholder="Họ & tên" value="userInsert.fullName"></hd-input>
+                        </div>
+                        <div class="trow">
+                            <label class="title">
+                                Tài khoản <span class="red-color">*</span> :
+                            </label>
+                            <hd-input empty-placeholder="Tài khoản" value="userInsert.userName" required="true"
+                                      hydname="userName"></hd-input>
+                        </div>
+                        <div class="trow">
+                            <label class="title">
+                                Mật khẩu <span class="red-color">*</span> :
+                            </label>
+                            <hd-input empty-placeholder="Thư điện tử" value="userInsert.password"
+                                      hyname="password"></hd-input>
+                        </div>
+                        <div class="trow">
+                            <label class="title">
+                                Giới tính :
+                            </label>
+                            <hd-select value="userInsert.gender" d-source="gender" field-value="id"
+                                       field-title="name"></hd-select>
+                        </div>
+                        <div class="trow">
+                            <label class="title">
+                                Công khai/Riêng tư :
+                            </label>
+                            <hyd-checkbox value="userInsert.isPublic"></hyd-checkbox>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="__footer">
+                <a ng-click="doAddUser()" class="btn">Thêm mới</a>
+                <a class="btn btn-secondary" ng-click="closePopup()">Đóng</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+

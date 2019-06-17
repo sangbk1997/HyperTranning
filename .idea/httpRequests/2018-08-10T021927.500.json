@@ -1,0 +1,7 @@
+{
+  "timestamp": "2018-08-10T07:19:27.004+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "Could not open Hibernate Session for transaction; nested exception is org.hibernate.TransactionException: JDBC begin transaction failed: ",
+  "path": "/ajax/employee/"
+}

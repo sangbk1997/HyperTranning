@@ -1,0 +1,43 @@
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.mb-5-i {
+    margin-bottom: 5px !important;
+}
+
+.mb-10-i {
+    margin-bottom: 10px !important;
+}
+
+.mb-15-i {
+    margin-bottom: 15px !important;
+}
+
+.mb-20-i {
+    margin-bottom: 20px !important;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.fz-16 {
+    font-size: 16px;
+}
+
+.red-color {
+    color: red;
+}

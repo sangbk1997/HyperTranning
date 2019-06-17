@@ -1,0 +1,7 @@
+{
+  "timestamp": "2018-08-10T07:06:46.160+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "Unable to locate Attribute  with the the given name [CODE] on this ManagedType [com.hyperlogy.employee.bo.Employee]",
+  "path": "/ajax/employee/"
+}

@@ -1,0 +1,7 @@
+<label class="radio" ng-repeat="option in dSource">
+    <input type="radio" class="common3"
+           name="{{groupName}}" ng-model="$parent.value" ng-value="option[fieldValue]"
+           ng-change="chooseItemValue(option)"
+           ng-disabled="disabled">
+    <i></i>{{option[fieldTitle]}}
+</label>

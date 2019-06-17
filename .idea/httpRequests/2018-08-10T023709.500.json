@@ -1,0 +1,7 @@
+{
+  "timestamp": "2018-08-10T07:37:09.340+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "Could not obtain transaction-synchronized Session for current thread; nested exception is org.hibernate.HibernateException: Could not obtain transaction-synchronized Session for current thread",
+  "path": "/ajax/employee/"
+}

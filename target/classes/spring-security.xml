@@ -1,0 +1,35 @@
+<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
+       <!--xmlns:ss="http://www.springframework.org/schema/security"-->
+       <!--xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+       <!--xsi:schemaLocation="http://www.springframework.org/schema/beans-->
+                                 <!--http://www.springframework.org/schema/beans/spring-beans.xsd-->
+                                 <!--http://www.springframework.org/schema/security-->
+                                 <!--http://www.springframework.org/schema/security/spring-security.xsd">-->
+    <!--&lt;!&ndash; enable use-expressions &ndash;&gt;-->
+    <!--<ss:http auto-config="true" use-expressions="true">-->
+        <!--<ss:intercept-url pattern="/static/**" access="permitAll()"/>-->
+        <!--<ss:intercept-url pattern="/user/myLogin" access="permitAll()"/>-->
+        <!--<ss:intercept-url pattern="/user/myLogout" access="permitAll()"/>-->
+        <!--<ss:intercept-url pattern="/user/invalidLogin" access="permitAll()"/>-->
+        <!--<ss:intercept-url pattern="/**" access="isAuthenticated()"/>-->
+        <!--<ss:csrf disabled="true"/>-->
+        <!--<ss:form-login-->
+                <!--login-page="/user/myLogin"-->
+                <!--login-processing-url="/postLogin"-->
+                <!--default-target-url="/rolePage"-->
+                <!--authentication-failure-url="/user/invalidLogin"-->
+                <!--username-parameter="username"-->
+                <!--password-parameter="password"/>-->
+        <!--<ss:logout logout-success-url="/user/myLogout"/>-->
+
+    <!--</ss:http>-->
+
+    <!--<ss:authentication-manager>-->
+        <!--<ss:authentication-provider>-->
+            <!--<ss:user-service>-->
+                <!--<ss:user name="admin" password="$2a$12$gmFXC74IRBODfkGcWhVUGelfT7hb3yeObUe.swjwMhAuwqRwv6Ori" authorities="ROLE_ADMIN" />-->
+                <!--<ss:user name="user" password="$2a$12$gmFXC74IRBODfkGcWhVUGelfT7hb3yeObUe.swjwMhAuwqRwv6Ori" authorities="ROLE_USER" />-->
+            <!--</ss:user-service>-->
+        <!--</ss:authentication-provider>-->
+    <!--</ss:authentication-manager>-->
+<!--</beans>-->

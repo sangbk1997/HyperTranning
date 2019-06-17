@@ -1,0 +1,14 @@
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>
+<%@ taglib prefix="security" uri="http://www.springframework.org/tags" %>
+<div  ng-controller="userController" style="padding: 20px;">
+    <h1>Header</h1>
+    <h3>Thông tin người dùng </h3>
+    <div>
+        <div>Username: <span ng-bind="infoUserLogin.username" class="move_cursor"></span></div>
+        <br>
+        <div>Thông tin quyền User </div>
+        <div ng-bind="infoUserLogin.authorities"></div>
+        <br>
+        <div> <a href="/logout" class="btn btn-warning">Logout</a></div>
+    </div>
+</div>

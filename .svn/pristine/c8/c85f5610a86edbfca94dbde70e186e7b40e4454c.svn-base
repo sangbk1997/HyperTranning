@@ -1,0 +1,221 @@
+
+
+
+
+.width-1{
+    width: 10%;
+}
+.width-2{
+    width: 20%;
+}
+.width-3{
+    width: 30%;
+}
+.width-4{
+    width: 40%;
+}
+.width-5{
+    width: 50%;
+}
+.width-6{
+    width: 60%;
+}
+.width-7{
+    width: 70%;
+}
+.width-8{
+    width: 80%;
+}
+.width-9{
+    width: 90%;
+}
+
+.width-10{
+    width: 100%;
+}
+
+.roleContainer{
+    width: 90%;
+    margin: 10px auto;
+}
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, .5);
+}
+
+.modal-content{
+    z-index: 1;
+    position: relative;
+    background: white;
+    margin: 10px auto;
+    border: 1px solid green;
+    border-radius: 5px;
+    width: 40%;
+    padding-bottom: 20px;
+}
+
+.close{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus{
+    color: purple;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+
+
+.btn{
+    padding: 3px 10px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.btn:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.btn-primary{
+    color: white;
+    background-color: #3366CC;
+}
+.btn-warning{
+    color: white;
+    background-color: orange;
+}
+.btn-info{
+    background-color: #99FF33;
+}
+.btn-default{
+    background-color: gainsboro;
+}
+
+.btn-danger{
+    background-color: orangered;
+}
+
+hr{
+    opacity: 0.3;
+}
+
+.title{
+    color: #0066CC;
+    font-size: 20px;
+    padding: 5px;
+}
+
+table{
+    width: 80%;
+    margin: auto;
+}
+.center{
+    text-align: center;
+}
+
+table tr{
+    margin-top: 10px;
+}
+
+tr input{
+    width: 80%;
+}
+
+.searchBox{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+.searchInfo table{
+    width: 40%;
+}
+
+.listRole{
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+
+.tableRole table{
+    border-collapse: collapse;
+    width: 70%;
+    margin: 20px auto;
+}
+
+.tableRole table tr:hover{
+    background-color: #d5e7ec;
+}
+
+.tableRole table tr:nth-child(even){
+   background-color: #cccccc;
+}
+.tableRole th, .tableRole  td{
+    border: 1px solid gray;
+    padding: 5px;
+    text-align: center;
+}
+
+.link{
+    color: blue;
+}
+
+.link:hover, link:focus{
+    cursor: pointer;
+    color: red;
+}
+
+.alert{
+    color: red;
+}
+
+.loginContainer{
+    width: 30%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #d5e7ec;
+    border-radius: 7px;
+}
+
+.alignLeft{
+    text-align: left;
+}
+
+h2{
+    color: Blue;
+}
+
+.move_cursor{
+    cursor: pointer;
+    color: blue;
+}

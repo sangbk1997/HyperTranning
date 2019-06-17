@@ -1,0 +1,12 @@
+<label class="checkbox semi-bold" ng-if="checkAllLabel">
+    <input type="checkbox" ng-checked="value != null && value.length == dSource.length"
+           ng-click="checkAll()"
+           ng-disabled="disabled">
+    <i></i>{{checkAllLabel | printMsg}}
+</label>
+<label class="checkbox {{customStyle}}" ng-repeat="option in dSource">
+    <input type="checkbox" value="{{option.value}}" ng-checked="isItemValueSelected(option)"
+           ng-click="toggleItemValue(option)"
+           ng-disabled="disabled">
+    <i></i>{{option[fieldTitle]}}
+</label>

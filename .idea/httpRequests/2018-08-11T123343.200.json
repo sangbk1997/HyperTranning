@@ -1,0 +1,16 @@
+{
+  "status": "DANGER",
+  "data": {
+    "errors": {
+      "firstName": [
+        "first Name is not empty"
+      ],
+      "lastName": [
+        "last Name is not empty"
+      ],
+      "code": [
+        "code is not empty"
+      ]
+    }
+  }
+}

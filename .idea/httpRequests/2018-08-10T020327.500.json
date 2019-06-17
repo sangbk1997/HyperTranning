@@ -1,0 +1,7 @@
+{
+  "timestamp": "2018-08-10T07:03:27.853+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "No entity found for query; nested exception is javax.persistence.NoResultException: No entity found for query",
+  "path": "/ajax/employee/"
+}

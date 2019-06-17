@@ -1,0 +1,8 @@
+<div class="hd-input input" ng-class="{'disabled': disabled}">
+    <i class="icon-prepend fa {@icon-prepend}" ng-if="iconPrepend != 'no-icon'"></i>
+    <input type="text" ng-model="value" class="hd-value-input" hydname="{{hydname}}" format="number"
+           ng-change="linkOnChange()"
+           ng-disabled="disabled" placeholder="{{emptyPlaceholder}}"
+           ng-keyup="linkOnKeyup()">
+    <a class="hd-value-remove common-action" data-icon="i-remove-16" ng-disabled="disabled" ng-show="value" ng-click="!disabled && resetValue()"></a>
+</div>

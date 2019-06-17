@@ -1,0 +1,10 @@
+{
+  "status": "DANGER",
+  "data": {
+    "errors": {
+      "code": [
+        "Employee code is exist"
+      ]
+    }
+  }
+}
